@@ -1,0 +1,12 @@
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\bin\Debug\Week03_03.exe.config
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\bin\Debug\Week03_03.exe
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\bin\Debug\Week03_03.pdb
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\obj\Debug\Week03_03.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\obj\Debug\Week03_03.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\obj\Debug\Week03_03.Form1.resources
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\obj\Debug\Week03_03.Form2.resources
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\obj\Debug\Week03_03.Properties.Resources.resources
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\obj\Debug\Week03_03.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\obj\Debug\Week03_03.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\obj\Debug\Week03_03.exe
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_03\obj\Debug\Week03_03.pdb
