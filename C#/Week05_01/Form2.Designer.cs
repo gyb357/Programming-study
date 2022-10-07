@@ -36,10 +36,10 @@
             // 
             this.maskedTextBox1.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold);
             this.maskedTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.maskedTextBox1.Mask = "(999)0000-0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(289, 49);
             this.maskedTextBox1.TabIndex = 0;
-            this.maskedTextBox1.Text = "(___)____-____";
             this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // label1

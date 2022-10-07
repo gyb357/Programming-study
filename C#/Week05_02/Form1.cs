@@ -62,7 +62,7 @@ namespace Week05_02
         {
             if (listBox1.SelectedIndex > -1)
             {
-                listBox1.Items.Remove(listBox1.SelectedItems);
+                listBox1.Items.Remove(listBox1.SelectedItem);
             }
             else
             {

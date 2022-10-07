@@ -58,7 +58,7 @@ namespace Week05_01
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(linkLabel1.Text); // https://wku.ac.kr/
+            System.Diagnostics.Process.Start(linkLabel1.Text); // https://www.wku.ac.kr/
         }
     }
 }

@@ -61,7 +61,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(12, 82);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 23);
+            this.button3.Size = new System.Drawing.Size(55, 23);
             this.button3.TabIndex = 2;
             this.button3.Text = "추가";
             this.button3.UseVisualStyleBackColor = true;
@@ -71,7 +71,7 @@
             // 
             this.button4.Location = new System.Drawing.Point(84, 82);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 23);
+            this.button4.Size = new System.Drawing.Size(55, 23);
             this.button4.TabIndex = 3;
             this.button4.Text = "삭제";
             this.button4.UseVisualStyleBackColor = true;

@@ -15,8 +15,6 @@ namespace Week05_01
         public Form2()
         {
             InitializeComponent();
-
-            maskedTextBox1.Mask = "(999)0000-0000";
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
