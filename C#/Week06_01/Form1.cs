@@ -97,7 +97,9 @@ namespace Week06_01
 
         private void bt_Color_Click(object sender, EventArgs e)
         {
-            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            DialogResult result = colorDialog1.ShowDialog();
+
+            if (result == DialogResult.OK)
             {
                 try
                 {
@@ -108,6 +110,10 @@ namespace Week06_01
                     MessageBox.Show(ex.ToString());
                 }
                 finally { }
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                MessageBox.Show("취소.");
             }
         }
 
