@@ -21,25 +21,29 @@ barplot(DS, main = '사업부문별 매출액')
 
 # 3. 각 사업부문마다 각각의 색을 적용
 # 16진수 RGB 색
-barplot(DS, main = '사업부문별 매출액',
-        col = c('#003f5c', '#58508d', '#bc5090', '#ff6361', '#ffa600'))
+barplot(DS, 
+        main = '사업부문별 매출액',
+        col  = c('#003f5c', '#58508d', '#bc5090', '#ff6361', '#ffa600'))
 # 웹 브라우저에서 사용하는 색
 colors()
-barplot(DS, main = '사업부문별 매출액',
-            col = c('ivory2', 'khaki', 'lavenderblush', 'lavenderblush3', 'lemonchiffon'))
+barplot(DS,
+        main = '사업부문별 매출액',
+        col  = c('ivory2', 'khaki', 'lavenderblush', 'lavenderblush3', 'lemonchiffon'))
 
 
 
 # 4. 막대그래프를 수평 방향으로 출력돠도록 변경하고 y축의 값도 수평으로 출력
-barplot(DS, main = '사업부문별 매출액',
-            col = c('ivory2', 'khaki', 'lavenderblush', 'lavenderblush3', 'lemonchiffon'),
-            horiz = T,
-            las = 1)
-barplot(DS, main = '사업부문별 매출액',
-        col = c('ivory2', 'khaki', 'lavenderblush', 'lavenderblush3', 'lemonchiffon'),
+barplot(DS,
+        main  = '사업부문별 매출액',
+        col   = c('ivory2', 'khaki', 'lavenderblush', 'lavenderblush3', 'lemonchiffon'),
         horiz = T,
-        las = 1,
+        las   = 1)
+barplot(DS,
+        main   = '사업부문별 매출액',
+        col    = c('ivory2', 'khaki', 'lavenderblush', 'lavenderblush3', 'lemonchiffon'),
+        horiz  = T,
+        las    = 1,
         beside = T,
-        xlab = "억 원")
+        xlab   = "억 원")
 
 

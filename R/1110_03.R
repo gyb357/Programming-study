@@ -14,10 +14,11 @@ xname  <- '지름'
 yname  <- '빈도수'
 borcol <- 'green'
 
-gr <- hist(grith, main   = name,
-                  col    = barcol,
-                  xlab   = xname,
-                  ylab   = yname,
-                  border = borcol)
+gr <- hist(grith,
+           main   = name,
+           col    = barcol,
+           xlab   = xname,
+           ylab   = yname,
+           border = borcol)
 
 
