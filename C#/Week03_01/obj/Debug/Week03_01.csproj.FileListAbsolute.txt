@@ -6,3 +6,5 @@ C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\
 C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_01\bin\Debug\Week03_01.pdb
 C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_01\obj\Debug\Week03_01.exe
 C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_01\obj\Debug\Week03_01.pdb
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_01\obj\Debug\Week03_01.Form1.resources
+C:\Users\USER\source\repos\2022년도 윈도우 프로그래밍 실습 20192718\Week03_01\obj\Debug\Week03_01.csproj.GenerateResource.cache
