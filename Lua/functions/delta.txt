@@ -1,0 +1,49 @@
+--@name delta
+--@author
+--@shared
+
+
+if SERVER then
+    // ----- Wire ----- //
+    local Inputs = {
+        {"E"},
+        {"entity"}
+    }
+    local Outputs = {
+        {"V",      "Dv"},
+        {"vector", "vector"}
+    }
+    
+    
+    wire.adjustInputs(Inputs[1],   Inputs[2])
+    wire.adjustOutputs(Outputs[1], Outputs[2])
+    
+    
+    // ----- Initialize ----- //
+        V1 = Vector()
+        V2 = Vector()
+        Dv = Vector()
+        
+        
+    // ----- Function ----- //
+    local function delta(V1, V2)
+        return V1 - V2
+    end
+    
+    
+    timer.create("Interval", 0.01, 0, function()
+        E = wire.ports.E
+        
+        
+        if isValid(E) then
+            V1 = E:getVelocity()
+            Dv = delta(V1, V2)
+            V2 = E:getVelocity()
+        end
+        
+        
+        wire.ports.V  = V1
+        wire.ports.Dv = Dv
+    end)
+end
+

@@ -1,0 +1,68 @@
+--@name receive
+--@author
+--@shared
+
+
+// ----- Global Function ----- //
+local function send(N, T, P)
+    net.start(N)
+    net.writeTable(T)
+    net.send(P)
+end
+
+local function receive(N)
+    local T = {}
+    
+    net.receive(N, function()
+        local R = net.readTable()
+        
+        if R then
+            for I, V in ipairs(R) do
+                T[I] = V
+            end
+        end
+    end)
+    return T
+end
+
+
+if SERVER then
+    // ----- Wire ----- //
+    local Inputs = {
+        {"E1",     "E2",     "E3",     "E4"},
+        {"entity", "entity", "entity", "entity"}
+    }
+    
+    
+    wire.adjustInputs(Inputs[1], Inputs[2])
+    
+    
+    timer.create("Interval", 1, 0, function()
+        E1 = wire.ports.E1
+        E2 = wire.ports.E2
+        E3 = wire.ports.E3
+        E4 = wire.ports.E4
+        
+        
+        send("A", {E1, E2}, owner())
+        send("B", {E3, E4}, owner())
+    end)
+end
+
+
+if CLIENT then
+    A = receive("A")
+    B = receive("B")
+    
+    
+    timer.create("Interval", 1, 0, function()
+        E1, E2 = A[1], A[2]
+        E3, E4 = B[1], B[2]
+        
+        
+        print(E1, E2)
+        print(E3, E4)
+        print("------------------------------")
+    end)
+end
+

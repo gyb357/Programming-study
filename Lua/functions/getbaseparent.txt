@@ -1,0 +1,38 @@
+--@name getBaseParent
+--@author
+--@shared
+
+
+// ----- Global Function ----- //
+local function isValidParent(E)
+    return isValid(E:getParent())
+end
+
+
+if SERVER then
+    // ----- Wire ----- //
+    local Inputs = {
+        {"E"},
+        {"entity"}
+    }
+    
+    
+    wire.adjustInputs(Inputs[1], Inputs[2])
+    
+    
+    E = wire.ports.E
+    
+    
+    // ----- Function ----- //
+    local function getBaseParent(E)
+        while isValidParent(E) do
+            E = E:getParent()
+        end
+        return E
+    end
+    
+    
+    if isValid(E) then
+        print(getBaseParent(E))
+    end
+end

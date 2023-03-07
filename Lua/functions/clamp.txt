@@ -1,0 +1,13 @@
+--@name clamp
+--@author
+--@shared
+
+
+// ----- Global Function ----- //
+local function clamp(V, Min, Max)
+    return Angle(
+        math.Clamp(V[1], Min[1], Max[1]),
+        math.Clamp(V[2], Min[2], Max[2]),
+        math.Clamp(V[3], Min[3], Max[3])
+    )
+end

@@ -1,0 +1,36 @@
+--@name isValidTable
+--@author
+--@shared
+
+
+// ----- Global Function ----- //
+local function isValidTable(T)
+    for I = 1, table.count(T) do
+        if not isValid(T[I]) then
+            return false
+        end
+    end
+    return true
+end
+
+
+if SERVER then
+    // ----- Wire ----- //
+    local Inputs = {
+        {"E1",     "E2",     "E3",     "E4"},
+        {"entity", "entity", "entity", "entity"}
+    }
+    
+    
+    wire.adjustInputs(Inputs[1], Inputs[2])
+    
+    
+    E1 = wire.ports.E1
+    E2 = wire.ports.E2
+    E3 = wire.ports.E3
+    E4 = wire.ports.E4
+    
+    
+    if isValidTable({E1, E2}) then print("a") end
+    if isValidTable({E3, E4}) then print("b") end
+end

@@ -1,0 +1,37 @@
+--@name changed
+--@author
+--@shared
+
+
+if SERVER then
+    // ----- Wire ----- //
+    local Inputs = {
+        {"E"},
+        {"entity"}
+    }
+    
+    
+    wire.adjustInputs(Inputs[1], Inputs[2])
+    
+    
+    // ----- Constant ----- //
+    local Changed = {}
+    
+    
+    // ----- Function ----- //
+    local function changed(N, V)
+        local Old        = Changed[N]
+              Changed[N] = V
+            
+        return Old ~= V
+    end
+    
+    
+    timer.create("Interval", 0.01, 0, function()
+        E = wire.ports.E
+        
+        if changed("E", E) then
+            print(1)
+        end
+    end)
+end
